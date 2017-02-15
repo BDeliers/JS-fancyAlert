@@ -11,7 +11,7 @@
 	
 	fancyAlert({bgColor:"#FE3123", txtColor:"#222", height:"85px", fontSize:"20px", duration: 3, msg:"Hi everybody !"})
 
-	©BDeliers, février 2017
+	©BDeliers, february 2017
 	http://bdeliers.com	
 */
 
