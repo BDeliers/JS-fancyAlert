@@ -1,2 +1,15 @@
 # JS-fancyAlert
-Function to create fancy headband on html page's top.
+Simple function which displays an headband at the top of the html page, prettyer than use alert(). 
+
+!! jQuery's import is required in the page's <head> !!
+
+You should put this function in your <head>, your script file, or at the top of your <body>
+
+The call has this typical look :  
+fancyAlert({bgColor:"background color", txtColor:"text color", height:"height", fontSize:"font size", length: duration in seconds, msg="your message"})
+
+For example :
+fancyAlert({bgColor:"#FE3123", txtColor:"#222", height:"85px", fontSize:"20px", length: 3, msg="Hi everybody !"})
+
+©BDeliers, février 2017
+http://bdeliers.com	
