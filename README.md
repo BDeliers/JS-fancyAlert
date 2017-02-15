@@ -7,7 +7,11 @@ You should put this function in your HEAD, your script file, or at the top of yo
 
 The call has this typical look :  
 ``fancyAlert({bgColor:"background color", txtColor:"text color", height:"height", fontSize:"font size", length: duration in seconds, msg="your message"})``
+
 For example :
+
 ``fancyAlert({bgColor:"#FE3123", txtColor:"#222", height:"85px", fontSize:"20px", length: 3, msg="Hi everybody !"})``
+
 ©BDeliers, février 2017
+
 http://bdeliers.com	
