@@ -15,3 +15,5 @@ For example :
 ©BDeliers, february 2017
 
 http://bdeliers.com	
+
+Distributed under GPL3 License
