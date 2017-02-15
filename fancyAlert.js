@@ -17,18 +17,15 @@
 
 function fancyAlert (args) {
 	var length = parseInt(args.length) * 1000;
+	var nav = $(".navbar-fixed-top");
 
-	var fancyAlert = $("<span class=\"fancyAlert\" style=\"display:none; text-align: center; top: 0; left: 0; position: fixed; z-index: 10000; margin-left: 15px;\" ></span>");
+	var fancyAlert = $("<span class=\"fancyAlert\" style=\"display:none; text-align: center; position: fixed; z-index: 10000; margin-left: 15px;\" ></span>");
 
-	fancyAlert.css("background-color", args.bgColor);
-	fancyAlert.css("height", args.height);
-	fancyAlert.css("width", $("body").css("width"));
-	fancyAlert.css("line-height", args.height);
-	fancyAlert.css("color", args.txtColor);
-	fancyAlert.css("font-size", args.fontSize);
+	fancyAlert.css({"background-color":args.bgColor, "height":args.height, "width":nav.css("width"), \
+		"margin-top":nav.css("height"), "line-height":args.height, "color":args.txtColor, "font-size":args.fontSize});
 	fancyAlert.text(args.msg);
 
-	$("body").prepend(fancyAlert);
+	nav.after(fancyAlert);
 	fancyAlert.fadeIn(700);
 
 	fancyAlert.delay(length).fadeOut(500, function(){fancyAlert.remove()});
